@@ -1,0 +1,132 @@
+#+title: Årsprøve
+#+subtitle: Programmering B
+#+author: 2.p - Vibenshus Gymnasium
+#+date: 2023
+# Themes: beige|black|blood|league|moon|night|serif|simple|sky|solarized|white
+#+reveal_theme: night
+#+reveal_title_slide: <h2>%t</h2><h3>%s</h3><h4>%a</h4><h4>%d</h4>
+#+reveal_title_slide_background:
+#+reveal_default_slide_background:
+#+reveal_extra_options: slideNumber:"c",progress:true,transition:"slide",navigationMode:"default",history:false,hash:true
+# #+reveal_extra_attr: style="color:red"
+#+options: toc:nil num:nil tags:nil timestamp:nil ^:{}
+
+* Den rigtige eksamen
+
+** Prøveformen
+#+reveal_html: <div style="font-size: 50%;">
+Fra læreplanen
+
+#+begin_quote
+Der afholdes en mundtlig prøve på grundlag af eksaminandens eksamensprojekt, jf. pkt. 3.2., og en opgave med tilhørende bilag, tildelt ved lodtrækning.
+
+Før prøven sender skolen et eksemplar af synopsen, fortegnelse over eksamensprojekterne samt opgaver med bilag til censor. Eksaminator og censor drøfter inden den mundtlige del af prøven, hvilke problemstillinger fra eksamensprojektet eksaminanden skal uddybe. Opgaverne, der indgår som grundlag for prøven, skal tilsammen dække de faglige mål. Opgaverne fordeles ved lodtrækning. Den enkelte opgave må højst anvendes tre gange på samme hold. Eksaminationstiden er ca. 30 minutter. Der gives ca. 60 minutters forberedelsestid. Eksaminationen tager udgangspunkt i eksaminandens præsentation af eksamensprojektet suppleret med et eller flere i forvejen forberedte spørgsmål fra eksaminator. Eksaminationen former sig derefter som en samtale mellem eksaminand og eksaminator med udgangspunkt i opgaven.
+#+end_quote
+
+** Prøveformen opsummeret
+#+reveal_html: <div style="font-size: 60%;">
+- 60 minutters forberedelse.
+- 30 minutters eksamination.
+- I trækker en *ukendt* opgave, som I skal bruge forberedelsestiden på at løse.
+- Under eksaminationen skal I først præsentere jeres eksamensprojekt og svare på spørgsmål til det. Resten af eksaminationen drejer sig om jeres besvarelse af den ukendte opgave.
+- *Internet er tilladt!*
+- Det er forventet, at I anvender jeres egen computer.
+
+  
+** Bedømmelseskriterier
+#+reveal_html: <div style="font-size: 60%;">
+
+#+begin_quote
+Bedømmelsen er en vurdering af, i hvilken grad eksaminandens præstation opfylder de faglige mål, som de er angivet i pkt. 2.1.
+
+Ved prøve, hvor faget indgår i samspil med andre fag, lægges der vægt på at eksaminanden kan
+- demonstrere viden om fagets identitet og metoder
+- behandle problemstillinger i samspil med andre fag
+
+Der gives én karakter ud fra en helhedsvurdering af eksaminandens mundtlige præstation, omfattende eksamensprojektet samt opgaven.
+#+end_quote
+
+** Faglige mål
+#+reveal_html: <div style="font-size: 60%;">
+
+#+begin_quote
+Eleverne skal kunne:
+- bruge programmering til at undersøge et emne eller problemområde, med henblik på – via programmets funktion - at skabe ny indsigt eller til at løse et problem
+- behandle problemstillinger i samspil med andre fag
+- anvende avancerede konstruktioner i et programmeringssprog
+- redegøre for arkitekturen af programmer på forskellige abstraktionsniveauer, herunder relationen mellem brug og funktion
+- redegøre for simple specifikationsmodeller og realisere disse i simple velstrukturerede programmer samt teste disse
+- rette, tilpasse og udvide avancerede programmer
+- demonstrere viden om fagets identitet og metoder
+- arbejde inkrementelt og systematisk i programmeringsprocessen.
+#+end_quote
+
+** Kernestof
+#+reveal_html: <div style="font-size: 60%;">
+#+begin_quote
+Kernestoffet er:
+- programmeringssprog og elementer i programmers opbygning, herunder variabler, typer, udtryk, kontrolstrukturer, parametrisering/abstraktionsmekanismer, rekursion, polymorfi og algoritmemønstre
+- arkitekturen for programmers interaktion med omgivelserne med henblik på hændelsesstyret interaktion og interaktion mellem systemer
+- generiske programdele og biblioteksmoduler
+- arbejdsgange og systematik i programmeringsprocessen, herunder test og fejlfinding
+- abstrakte programmeringsbeskrivelser og dokumentation.
+#+end_quote
+
+** Eksempel 1 på ukendt opgave
+#+reveal_html: <div style="font-size: 60%;">
+#+begin_quote
+Et fysikeksperiment har resulteret i en mængde målepunkter, og fysiklærerne ønsker nu at kunne behandle disse data på forskellige måder i et program. Det vedhæftede program åbner datafilen fra eksperimentet, laver en lille smule databehandling og udskriver information i konsollen.
+
+1. Undersøg koden og tegn et flowdiagram over programmets behandling af data fra filen.
+2. Skriv en funktion, der kan tage en liste af målepunkter som argument og producere en graf over målepunkterne. Brug biblioteket =matplotlib= til at tegne grafen.
+3. Udvid programmet med funktioner, som du synes er passende for et sæt målepunkter fra fysiktimerne.
+#+end_quote
+** Eksempel 2 på ukendt opgave
+#+reveal_html: <div style="font-size: 45%;">
+#+begin_quote
+*Lixtalsberegner.*
+
+Lixtal beregnes på følgende måde:
+
+\begin{align*}
+\text{Lixtal} = \frac{\text{antal ord}}{\text{antal sætninger}} + \frac{\text{antal lange ord}\cdot 100}{\text{antal ord}}
+\end{align*}
+
+Lange ord defineres som ord med flere end seks bogstaver.
+
+Når man lærer at læse i folkeskolen inddeles niveauerne i lixtal, hvilket betyder at bøger med mange kort ord har et lille lixtal. Det vil sige, at lixtallet foræller noget om sværhedsgraden af teksten.
+
+Der er lavet et stykke kode, der henter tekstfil ind og tæller antal af ord og punktummer. Der skal udvikles en funktion, som kan beregne lix. Du skal berøre alle fire spørgsmål, men gå i dybden med mindst ét.
+
+1. Lav et flowdiagram, der viser hvordan udregning af lixtal programmeringsteknisk.
+2. Lav pseudokode til programmet.
+3. Udvid programmet med en funktion, der kan tælle antallet af ord med flere end seks bogstaver.
+4. Udvid programmet, så det kan beregne lixtal.
+#+end_quote
+
+
+* Årsprøven i år
+
+** Prøveformen
+#+reveal_html: <div style="font-size: 80%;">
+- 30 minutters forberedelse.
+- 15 minutters eksamination.
+- I trækker en *ukendt* opgave, som I skal løse i forberedelsestiden.
+- Selve eksaminationen omhandler jeres besvarelse af opgaven.
+- De ukendte opgaver vil indeholde færre delspørgsmål end i de viste eksempler.
+- De ukendte opgaver vil tage udgangspunkt i =python 3= som programmeringssprog.
+
+** Hvad I skal have styr på
+#+reveal_html: <div style="font-size: 60%;">
+- Variabler
+- Funktioner
+- Manipulation af strenge
+- Anvendelse af matematik i programmering
+- Klasser og objekter. Både anvende og skrive selv.
+- Flowdiagrammer (vi har brugt plantuml, men man må også gerne bare tegne dem i hånden)
+- Klassediagrammer (vi har brugt plantuml, men man må også gerne bare tegne dem i hånden)
+- =arcade=-biblioteket
+
+Husk at I kan finde links til al materiale på fagets hjemmeside: [[https://vibenshus-gymnasium-programmering.github.io/]]
+
+* Nogen spørgsmål?
