@@ -125,6 +125,7 @@ Der er lavet et stykke kode, der henter tekstfil ind og tæller antal af ord og 
 - Anvendelse af matematik i programmering
 - Løkker
 - Betingelser (if statements)
+- Tilfældige tal (random numbers)
 - Klasser og objekter. Både anvende og skrive selv.
 - Flowdiagrammer (vi har brugt plantuml, men man må også gerne bare tegne dem i hånden)
 - Klassediagrammer (vi har brugt plantuml, men man må også gerne bare tegne dem i hånden)
